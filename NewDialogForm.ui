@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>274</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Новый диалог</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/newButton.png</normaloff>images/newButton.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(107, 184, 139);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="id">
+     <property name="styleSheet">
+      <string notr="true">background:rgb(255, 255, 255);</string>
+     </property>
+     <property name="placeholderText">
+      <string>ID собеседника...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="publicKey">
+     <property name="styleSheet">
+      <string notr="true">background:rgb(255, 255, 255);</string>
+     </property>
+     <property name="placeholderText">
+      <string>Публичный ключ шифрования собеседника...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background:rgb(107, 184, 139);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="ok">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:rgb(225, 241, 231);</string>
+        </property>
+        <property name="text">
+         <string>Начать диалог</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancel">
+        <property name="styleSheet">
+         <string notr="true">background:rgb(225, 241, 231);</string>
+        </property>
+        <property name="text">
+         <string>Отмена</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
